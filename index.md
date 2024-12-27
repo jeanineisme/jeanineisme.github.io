@@ -30,19 +30,16 @@ Showcasing hands-on projects in cybersecurity, demonstrating expertise in networ
 
     ![SecurityEventRule](securityeventrule.png)
 
-
 #### Key Outcomes
 - Successfully established a SIEM solution capable of real-time threat detection and alerting.
 - Simulated an environment vulnerable to brute force attacks and demonstrated incident monitoring capabilities.
-
----
 
 #### Future Enhancements
 - Add more data sources to enrich monitoring capabilities.
 - Integrate additional intelligence feeds for broader IoC detection.
 - Automate response actions for detected incidents.
 
-
+----
 
 #### Header 4
 
