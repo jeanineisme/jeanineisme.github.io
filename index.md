@@ -9,9 +9,16 @@ Showcasing hands-on projects in cybersecurity, demonstrating expertise in networ
 ##### Technology
 - Microsoft Azure
   - Virtual Machine (VM): Windows 10 Pro
-  - Microsoft Sentinel Resource Group to create log log analytics workspace
+  - Microsoft Sentinel resource group to create log log analytics workspace
 
-
+##### Process
+1.  Set up the Windows 10 Pro VM in Azure. Left RDP open on port 3389 on purpose.
+2.  Created and added log analytics workspace in Sentinel, adding it to the resource group that houses all of my resources (VMs, SIEM tools, etc.).
+3.  Added VM event logs to the log analytics workspace.This will send it to the Sentinel instance.
+    *  Set up Data connector with Windows Security Event via AMA in the Content Hub.
+    *  Set up data collection rule.
+4.   Created a Sentinel rule that checks for sign-ins via RDP (successful brute force attempts) and generate an alert.
+    ![SecurityEventRule](securityeventrule.png)
 
 #### Header 4
 
