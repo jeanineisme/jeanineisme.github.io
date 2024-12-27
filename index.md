@@ -1,41 +1,17 @@
----
-layout: default
----
+# Cybersecurity Projects 
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Showcasing hands-on projects in cybersecurity, demonstrating expertise in network security, threat analysis, and system optimization. Each project reflects my commitment to safeguarding digital environments through innovative solutions.
 
-[Link to another page](./another-page.html).
+## Creating a SOC
 
-There should be whitespace between paragraphs.
+> Created a security operations center (SOC) by deploying a security and event manager (SIEM) the monitors and generates alerts for all the devices in my personal home lab. Set up an intelligence feed that sends the SIEM commonly seen and newly found indicators of compromise.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+##### Technology
+- Microsoft Azure
+  - Virtual Machine (VM): Windows 10 Pro
+  - Microsoft Sentinel Resource Group to create log log analytics workspace
 
-# Header 1
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
 
 #### Header 4
 
