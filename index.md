@@ -4,21 +4,45 @@ Showcasing hands-on projects in cybersecurity, demonstrating expertise in networ
 
 ## Creating a SOC
 
-> Created a security operations center (SOC) by deploying a security and event manager (SIEM) the monitors and generates alerts for all the devices in my personal home lab. Set up an intelligence feed that sends the SIEM commonly seen and newly found indicators of compromise.
+> Built a Security Operations Center (SOC) in a home lab environment by deploying a Security Information and Event Management (SIEM) system. Configured it to monitor devices and generate real-time alerts. Integrated an intelligence feed to detect commonly seen and newly discovered indicators of compromise (IoCs).
 
 ##### Technology
 - Microsoft Azure
   - Virtual Machine (VM): Windows 10 Pro
-  - Microsoft Sentinel resource group to create log log analytics workspace
+  - Microsoft Sentinel: Created a Log Analytics Workspace within a Sentinel resource group for centralized monitoring.
 
 ##### Process
-1.  Set up the Windows 10 Pro VM in Azure. Left RDP open on port 3389 on purpose.
-2.  Created and added log analytics workspace in Sentinel, adding it to the resource group that houses all of my resources (VMs, SIEM tools, etc.).
-3.  Added VM event logs to the log analytics workspace.This will send it to the Sentinel instance.
-    *  Set up Data connector with Windows Security Event via AMA in the Content Hub.
-    *  Set up data collection rule.
-4.   Created a Sentinel rule that checks for sign-ins via RDP (successful brute force attempts) and generate an alert.
+1. **Set up Azure VM:**  
+   - Deployed a Windows 10 Pro virtual machine in Azure.  
+   - Intentionally left RDP open on port 3389 to simulate a vulnerability.
+
+2. **Configured Log Analytics Workspace in Sentinel:**  
+   - Created a Log Analytics Workspace in Sentinel and added it to the existing resource group containing the VM and SIEM tools.
+
+3. **Integrated VM Event Logs:**  
+   - Configured the VM to send event logs to the Log Analytics Workspace.  
+     - Added a Data Connector for Windows Security Events via AMA in the Sentinel Content Hub.  
+     - Set up a Data Collection Rule to manage incoming log data.
+
+4. **Created Alert Rules:**  
+   - Developed a custom rule in Sentinel to monitor RDP login activity.  
+   - Configured the rule to generate alerts for successful brute-force login attempts via RDP.  
+
     ![SecurityEventRule](securityeventrule.png)
+
+
+#### Key Outcomes
+- Successfully established a SIEM solution capable of real-time threat detection and alerting.
+- Simulated an environment vulnerable to brute force attacks and demonstrated incident monitoring capabilities.
+
+---
+
+#### Future Enhancements
+- Add more data sources to enrich monitoring capabilities.
+- Integrate additional intelligence feeds for broader IoC detection.
+- Automate response actions for detected incidents.
+
+
 
 #### Header 4
 
