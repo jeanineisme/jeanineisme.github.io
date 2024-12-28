@@ -14,7 +14,7 @@ Showcasing hands-on projects in cybersecurity, demonstrating expertise in networ
 ##### Process
 1. **Set up Azure VM:**  
    - Deployed a Windows 10 Pro virtual machine in Azure.  
-   - Intentionally left RDP open on port 3389 to simulate a vulnerability.
+   - Intentionally left RDP open on port 3389 to simulate a vulnerability (honeypot).
 
 2. **Configured Log Analytics Workspace in Sentinel:**  
    - Created a Log Analytics Workspace in Sentinel and added it to the existing resource group containing the VM and SIEM tools.
